@@ -118,6 +118,16 @@ section a {
     text-decoration: none;
     color: var(--primary-color);
     background-color: var(--secondary-bg-color);
+    /* transition: 0.1s; */
+}
+
+section a:hover {
+    background-color: var(--primary-color);
+    color: var(--primary-bg-color);
+}
+
+section a:active {
+    outline: solid 6px red;
 }
 
 section a:has(h2) {
