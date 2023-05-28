@@ -102,7 +102,7 @@ section {
     margin-top: 1rem;
 
     width: var(--content-width);
-    padding: 2rem;
+    padding: 1rem;
     background-color: var(--primary-bg-color);
 
     display: grid;
@@ -131,7 +131,7 @@ section a:has(h2) {
 }
 
 section a:has(h2) h2 {
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: center;
     /* border: solid 1rem; */
 }
