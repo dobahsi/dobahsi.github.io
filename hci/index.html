@@ -4,77 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HCI prototype</title>
+    <title>中華民國圖書資訊學會</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+
 </head>
 <body>
-    <h1>HCI prototype</h1>
-    <div class="links">
-        <a href="./phone_1/">phone_1</a>
-        <a href="./phone_2/">phone_2</a>
-        <a href="./phone_3/">phone_3</a>
-        <a href="./desktop_1/">desktop_1</a>
-        <a href="./desktop_2/">desktop_2</a>
-    </div>
+    <header>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg>
+
+        <img src="./assets/logo-LAROC.jpg" alt="logo" class="logo">
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"></path></svg>
+    </header>
+
+    <main>
+        <div class="slides-container">
+            <img src="./assets/slide-1.png" alt="slide-1" class="slides">
+        </div>
+
+        <content>
+            <section>
+                <a href="#">
+                    <h2>最新<br/>公告</h2>
+                </a>
+
+                <a href="#" content="1">
+                    <span>2023 / 04 / 27</span>
+                    <p>
+                        中華民國圖書館學會組團參加 2023 ALA 年會會
+                    </p>
+                </a>
+
+                <a href="#" content="2">
+                    <span>2022 / 10 / 22</span>
+                    <p>
+                        111 年資訊組織分析師認證考試報名繳費
+                    </p>
+                </a>
+            </section>
+
+            <section>
+                <a href="#">
+                    <h2>最新<br/>活動</h2>
+                </a>
+
+                <a href="#" content="1">
+                    <span>2023 / 04 / 27</span>
+                    <p>
+                        歡迎申請國立公共資訊圖書館 112 年度獎助博碩士圖書資訊學位論文
+                    </p>
+                </a>
+
+                <a href="#" content="2">
+                    <span>2023 / 03 / 22</span>
+                    <p>
+                        112年度「提升圖書館員身心障礙服務專業知能」線上專題課程，歡迎踴躍報名參加！
+                    </p>
+                </a>
+            </section>
+        </content>
+    </main>
+
 </body>
 
-<style>
-/* css reset */
-*, *::before, *::after {
-    box-sizing: border-box;
-}
-* {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-}
-html, body {
-    height: 100%;
-}
-body {
-    max-width: 100%;
-    line-height: 1.2;
-    -webkit-font-smoothing: antialiased;
-}
-li,ol,ul {
-    list-style: none
-}
-img, picture, video, canvas, svg {
-    display: block;
-    max-width: 100%;
-}
-input, button, textarea, select {
-    font: inherit;
-}
-p, h1, h2, h3, h4, h5, h6 {
-    overflow-wrap: break-word;
-}
-#root, #__next {
-    isolation: isolate;
-}
-a:hover {
-    text-decoration: none;
-}
-.links {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    /* justify-items: center; */
-    /* align-items: center; */
-    gap: 20px;
+<script type="text/javascript" src="./script.js"></script>
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
-}
-a {
-    /* top: auto; */
-    text-align: center;
-    height: 40px;
-    background-color: pink;
-}
-h1 {
-    text-align: center;
-    margin: 20px 0;
-}
-img {
-    width: 100%;
-}
-</style>
 </html>
