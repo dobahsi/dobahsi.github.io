@@ -107,7 +107,7 @@ section {
 
     display: grid;
     grid-template-columns: 40% 1fr;
-    grid-template-rows: repeat(2, 9rem);
+    grid-template-rows: repeat(2, auto);
     grid-template-areas:
         "title content1"
         "title content2";
@@ -146,8 +146,6 @@ section a:has(span)[content="2"] {
 
 section a:has(span) {
     padding: 1rem 1.8rem;
-    font-size: 1.5rem;
-    font-weight: 600;
     overflow: hidden;
 
     display: flex;
@@ -155,12 +153,19 @@ section a:has(span) {
     gap: 1rem;
 }
 
-section a:has(span) p {
+section p {
     /* white-space: nowrap;
     text-overflow: ellipsis; */
+    font-size: 1.5rem;
+    font-weight: 600;
     
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     overflow: hidden;
+}
+
+section span {
+    font-size: 1rem;
+    font-weight: 600;
 }
