@@ -41,6 +41,10 @@ p, h1, h2, h3, h4, h5, h6 {
     font-family: 'Noto Sans TC', sans-serif;
 }
 
+*:focus {
+    outline: solid 6px red;
+}
+
 a[target="_blank"]:after {
     content: '';
     background-image: url('/assets/external-link.svg');
@@ -71,8 +75,10 @@ body {
 
 header {
     /* grid-column: 1 / -1; */
+    /* height: 1000px; */
+
     width: 100%;
-    height: 5rem;
+    padding: 1rem 0;
     background-color: var(--primary-bg-color);
     box-shadow: 0 0 5rem rgba(0, 0, 0, 0.2);
     z-index: 999;
@@ -83,15 +89,15 @@ header {
 }
 
 header svg {
-    height: 2rem;
-    width: 2rem;
+    height: 2.5rem;
+    width: 2.5rem;
     margin: 0 1rem 0 1rem;
     fill: var(--primary-color);
 }
 
 .logo {
-    width: 3rem;
-    height: 3rem;
+    width: 3.5rem;
+    height: 3.5rem;
 }
 
 main {
@@ -106,7 +112,7 @@ section {
     background-color: var(--primary-bg-color);
 
     display: grid;
-    grid-template-columns: 40% 1fr;
+    grid-template-columns: clamp(6rem, 40%, 10rem) 1fr;
     grid-template-rows: repeat(2, auto);
     grid-template-areas:
         "title content1"
@@ -126,9 +132,6 @@ section a:hover {
     color: var(--primary-bg-color);
 }
 
-section a:active {
-    outline: solid 6px red;
-}
 
 section a:has(h2) {
     grid-area: title;
@@ -141,7 +144,7 @@ section a:has(h2) {
 }
 
 section a:has(h2) h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: center;
     /* border: solid 1rem; */
 }
