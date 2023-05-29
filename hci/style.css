@@ -42,7 +42,15 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 *:focus {
-    outline: solid 6px red;
+    outline: solid 4px red;
+}
+
+.displaynone {
+    display: none !important;
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 a[target="_blank"]:after {
@@ -63,6 +71,7 @@ a[target="_blank"]:after {
     --primary-bg-color: #ffffff;
     --secondary-bg-color: #dddddd;
 }
+
 
 body {
     --content-width: minmax(1fr, 480px);
@@ -88,10 +97,20 @@ header {
     align-items: center;
 }
 
-header svg {
+.header-btn {
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: transparent;
+    margin: 0 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-btn > svg{
     height: 2.5rem;
     width: 2.5rem;
-    margin: 0 1rem 0 1rem;
     fill: var(--primary-color);
 }
 
@@ -100,6 +119,99 @@ header svg {
     height: 3.5rem;
 }
 
+.nav-bg {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    display: grid;
+    grid-template-columns: 20rem 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "nav .";
+}
+
+nav {
+    --nav-btn-height: 3rem;
+    --nav-font-size: 1.5rem;
+    --nav-font-weight: 600;
+    --nav-btn-gap: 1rem;
+
+    grid-area: nav;
+    background-color: var(--primary-bg-color);
+    padding: 1rem;
+    font-size: var(--nav-font-size);
+    font-weight: var(--nav-font-weight);
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--nav-btn-gap);
+}
+
+.nav-2-col {
+    width: 100%;
+    height: var(--nav-btn-height);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "btn1 btn2";
+    gap: var(--nav-btn-gap);
+}
+
+.nav-2-col > * {
+    background-color: var(--secondary-bg-color);
+    color: var(--primary-color);
+    text-decoration: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-2-col > div:nth-child(1) {
+    grid-area: btn1;
+}
+
+.nav-2-col > div:nth-child(2) {
+    grid-area: btn2;
+}
+
+.search {
+    width: 100%;
+    height: var(--nav-btn-height);
+    background-color: var(--secondary-bg-color);
+
+    display: grid;
+    grid-template-columns: 1fr 3rem;
+    grid-template-rows: 1fr;
+    grid-template-areas: "search icon";
+}
+
+.search-input {
+    grid-area: search;
+    min-width: 0;
+    padding: 0 1rem;
+    border: none;
+    background-color: transparent;
+}
+
+.search button {
+    grid-area: icon;
+    background-color: transparent;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search > svg {
+    height: 2rem;
+    width: 2rem;
+    fill: var(--primary-color);
+}
+
+/* main */
 main {
     width: var(--content-width);
 }

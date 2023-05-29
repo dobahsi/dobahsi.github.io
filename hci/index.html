@@ -10,11 +10,60 @@
 </head>
 <body>
     <header>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg>
+        <div class="menu">
+            <button class="header-btn menu-btn" aria-expanded="false" aria-label="導覽列" onclick="menuOpen()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg>
+            </button>
+
+            <div class="nav-bg displaynone">
+                <nav>
+                    <div class="nav-2-col">
+                        <a href="#">網站導覽</a>
+                        <a href="#">回首頁</a>
+                    </div>
+
+                    <div class="nav-2-col">
+                        <button href="#">無障礙功能</button>
+                        <button href="#">字體大小</button>
+                    </div>
+
+                    <form class="search">
+                        <input class="search-input" type="text" placeholder="搜尋">
+
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"></path></svg>
+                        </button>
+                    </form>
+
+                    <div class="nav-1-col">
+                        <button>
+                            關於學會
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path></svg>
+                        </button>
+                    </div>
+
+                    <div class="nav-1-col">
+                        活動公告
+                    </div>
+
+                    <div class="nav-1-col">
+                        學會出版
+                    </div>
+
+                    <div class="nav-1-col">
+                        網路資源
+                    </div>
+                </nav>
+            </div>
+            
+        </div>
+        
 
         <img src="./assets/logo-LAROC.jpg" alt="logo" class="logo">
 
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"></path></svg>
+        <button class="header-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"></path></svg>
+        </button>
     </header>
 
     <main>
