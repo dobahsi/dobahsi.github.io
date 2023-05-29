@@ -11,11 +11,11 @@
 <body>
     <header>
         <div class="menu">
-            <button class="header-btn menu-open-btn" aria-expanded="false" aria-label="導覽列" onclick="menuOpen()">
+            <button class="header-btn menu-open-btn" aria-expanded="false" aria-label="導覽列" onclick="toggleMenu()">
                 <box-icon name='menu' ></box-icon>
             </button>
 
-            <div class="nav-bg">
+            <div class="nav-bg displaynone">
                 <nav>
                     <div class="nav-2-col">
                         <a href="#">網站導覽</a>
@@ -109,7 +109,7 @@
                     </div>
                 </nav>
 
-                <button class="menu-close-btn" onclick="menuOpen()">
+                <button class="menu-close-btn" onclick="toggleMenu()">
                     <box-icon name='chevron-left'></box-icon>
                 </button>
             </div>

@@ -1,7 +1,7 @@
 var nav = document.querySelector('.nav-bg');
 console.log(nav);
 
-function menuOpen() {
+function toggleMenu() {
     nav.classList.toggle('displaynone');
 }
 
