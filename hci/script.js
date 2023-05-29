@@ -2,7 +2,11 @@ var nav = document.querySelector('.nav-bg');
 console.log(nav);
 
 function toggleMenu() {
-    nav.classList.toggle('displaynone');
+    if (nav.classList.contains('displaynone')) {
+        nav.classList.remove('displaynone');
+    } else {
+        nav.classList.add('displaynone');
+    }
 }
 
 function toggleExtendUl(e) {
