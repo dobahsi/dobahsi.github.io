@@ -71,15 +71,23 @@ a[target="_blank"]:after {
 
 /* css start */
 :root {
-    --primary-color: #333333;
+    --primary-color: #894848; /*5.01:1 vs grey */
+    --secondary-color: #595959; /* 5.15 vs #dddddd */
     --primary-bg-color: #ffffff;
     --secondary-bg-color: #dddddd;
 }
 
+.theme-dark {
+    --primary-color: #e2fcfa;
+    --secondary-color: #F5F5F5; 
+    --primary-bg-color: #282828;
+    --secondary-bg-color: #055d54;
+} 
+
 
 body {
     --content-width: minmax(1fr, 480px);
-    background-color: var(--secondary-bg-color);
+    background-color: var(--primary-bg-color);
 
     display: flex;
     flex-direction: column;
@@ -93,7 +101,7 @@ header {
     width: 100%;
     padding: 1rem 0;
     background-color: var(--primary-bg-color);
-    box-shadow: 0 0 5rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 5rem #00000033;
     z-index: 999;
 
     display: flex;
@@ -131,7 +139,7 @@ header {
 
     position: fixed;
     inset: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #000000;
 
     display: grid;
     grid-template-columns: 22rem calc(var(--nav-btn-height)) 1fr;
@@ -191,8 +199,13 @@ nav > * {
     min-width: 0;
     padding: 0 1rem;
     border: none;
-    background-color: transparent;
+    background-color: transparent;    
 }
+
+.search-input::placeholder {
+    color: var(--secondary-color); /* 5.15 vs #dddddd */
+}
+
 
 .search button {
     grid-area: icon;
@@ -279,7 +292,7 @@ nav > * {
 
 .nav-extend-ul a {
     text-decoration: none;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     font-size: 1.2rem;
     font-weight: 500;
 }
