@@ -10,6 +10,7 @@ function toggleMenu() {
 }
 
 function toggleExtendUl(e) {
+    
     if (e.target.localName == 'box-icon') {
         var ul = e.target.parentElement.parentElement.querySelector('.nav-extend-ul');
 
@@ -17,7 +18,7 @@ function toggleExtendUl(e) {
         var ul = e.target.parentElement.querySelector('.nav-extend-ul');
     }
 
-    var icon = ul.parentElement.querySelector('box-icon')
+    var icon = ul.parentElement.querySelector('box-icon');
 
     
     if (ul.classList.contains('displaynone')) {
@@ -26,6 +27,6 @@ function toggleExtendUl(e) {
     } else {
         ul.classList.add('displaynone')
         icon.classList.remove('rotate180');
-    }
+    }   
     
 }
