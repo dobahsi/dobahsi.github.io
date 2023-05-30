@@ -42,7 +42,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 *:focus {
-    outline: solid 4px red;
+    outline: solid 4px var(--focus-color);
 }
 
 .displaynone {
@@ -78,6 +78,7 @@ a[target="_blank"]:after {
 
     --content-width: minmax(1fr, 480px);
 
+    --focus-color: #ff0000;
 }
 
 .theme-dark {
@@ -85,6 +86,7 @@ a[target="_blank"]:after {
     --secondary-color: #F5F5F5; 
     --primary-bg-color: #282828;
     --secondary-bg-color: #055d54;
+    --focus-color: #00ffaa;
 } 
 
 
