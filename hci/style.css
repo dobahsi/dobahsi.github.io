@@ -75,6 +75,9 @@ a[target="_blank"]:after {
     --secondary-color: #595959; /* 5.15 vs #dddddd */
     --primary-bg-color: #ffffff;
     --secondary-bg-color: #dddddd;
+
+    --content-width: minmax(1fr, 480px);
+
 }
 
 .theme-dark {
@@ -127,6 +130,17 @@ header {
 }
 
 .logo {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    font-weight: 700;
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo img {
     width: 3.5rem;
     height: 3.5rem;
 }
@@ -139,7 +153,7 @@ header {
 
     position: fixed;
     inset: 0;
-    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.2);
 
     display: grid;
     grid-template-columns: 22rem calc(var(--nav-btn-height)) 1fr;
@@ -300,7 +314,6 @@ nav > * {
 
 /* main */
 main {
-    --content-width: minmax(1fr, 480px);
 
     width: var(--content-width);
 }
@@ -389,4 +402,24 @@ section p {
 section span {
     font-size: 1rem;
     font-weight: 600;
+}
+
+footer {
+    width: 100%;
+    background-color: var(--primary-color);
+    padding: 1rem;
+    color: var(--primary-bg-color);
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-header {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.footer-copyright {
+    font-size: 0.8rem;
 }
