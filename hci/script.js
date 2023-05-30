@@ -30,3 +30,15 @@ function toggleExtendUl(e) {
     }   
     
 }
+
+var button = document.getElementById("theme-button");
+
+button.addEventListener("click", function() {
+    var root = document.documentElement;
+
+    if (root.classList.contains("theme-dark")) {
+        root.classList.remove("theme-dark");
+    } else {
+        root.classList.add("theme-dark");
+    }
+});

@@ -77,6 +77,13 @@ a[target="_blank"]:after {
     --secondary-bg-color: #dddddd;
 }
 
+.theme-dark {
+    --primary-color: #e2fcfa;
+    --secondary-color: #F5F5F5; 
+    --primary-bg-color: #282828;
+    --secondary-bg-color: #055d54;
+} 
+
 
 body {
     --content-width: minmax(1fr, 480px);
