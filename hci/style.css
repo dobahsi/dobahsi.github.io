@@ -79,7 +79,7 @@ a[target="_blank"]:after {
 
 body {
     --content-width: minmax(1fr, 480px);
-    background-color: var(--secondary-bg-color);
+    background-color: #133337;
 
     display: flex;
     flex-direction: column;
