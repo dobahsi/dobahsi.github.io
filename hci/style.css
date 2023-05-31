@@ -79,6 +79,7 @@ a[target="_blank"]:after {
     --content-width: minmax(1fr, 34rem);
 
     --focus-color: #ff0000;
+    --logo-color: #000000;
 }
 
 .theme-dark {
@@ -87,6 +88,7 @@ a[target="_blank"]:after {
     --primary-bg-color: #282828;
     --secondary-bg-color: #055d54;
     --focus-color: #00ffaa;
+    --logo-color: #ffffff;
 } 
 
 
@@ -132,7 +134,7 @@ header {
 
 .logo {
     font-size: 1.5rem;
-    color: var(--primary-color);
+    color: var(--logo-color);
     font-weight: 700;
     text-decoration: none;
 
