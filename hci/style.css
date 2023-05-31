@@ -80,6 +80,8 @@ a[target="_blank"]:after {
 
     --focus-color: #ff0000;
     --logo-color: #000000;
+
+    --svg-color-filter:invert(30%) sepia(10%) saturate(2783%) hue-rotate(314deg) brightness(101%) contrast(80%);
 }
 
 .theme-dark {
@@ -89,6 +91,8 @@ a[target="_blank"]:after {
     --secondary-bg-color: #055d54;
     --focus-color: #00ffaa;
     --logo-color: #ffffff;
+
+    --svg-color-filter:invert(87%) sepia(15%) saturate(188%) hue-rotate(126deg) brightness(103%) contrast(109%);
 } 
 
 
@@ -414,6 +418,14 @@ main {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+.svg-icon img {
+    width: 3.5rem;
+}
+
+.filter-to-primary {
+    filter: var(--svg-color-filter)
 }
 
 section {
