@@ -38,7 +38,10 @@
 
                     <div class="nav-1-col">
                         <button onclick="toggleExtendUl(event)">
-                            關於學會
+                            <div class="icon-title-container">
+                                <img src="./assets/information-info.svg" class="svg-icon"/>
+                                關於學會
+                            </div>
                             <box-icon name='chevron-down'></box-icon>
                         </button>
                         
@@ -59,7 +62,11 @@
 
                     <div class="nav-1-col">
                         <button onclick="toggleExtendUl(event)">
-                            活動公告
+                            <div class="icon-title-container">
+                                <img src="./assets/event.svg" class="svg-icon"/>
+                                活動公告
+                                <img src="./assets/announcement.svg" class="svg-icon"/>
+                            </div>
                             <box-icon name='chevron-down'></box-icon>
                         </button>
 
@@ -76,7 +83,10 @@
 
                     <div class="nav-1-col">
                         <button onclick="toggleExtendUl(event)">
-                            學會出版
+                            <div class="icon-title-container">
+                                <img src="./assets/book.svg" class="svg-icon"/>
+                                學會出版
+                            </div>
                             <box-icon name='chevron-down'></box-icon>
                         </button>
                         
@@ -94,7 +104,10 @@
 
                     <div class="nav-1-col">
                         <button onclick="toggleExtendUl(event)">
-                            網路資源
+                            <div class="icon-title-container">
+                                <img src="./assets/internet.svg" class="svg-icon"/>
+                                網路資源
+                            </div>
                             <box-icon name='chevron-down'></box-icon>
                         </button>
                         
@@ -165,9 +178,11 @@
 
         <div class="announcement">
             <section>
-                <a href="#" class="svg-icon">
+                <a href="#">
                     <h2>
-                        <img src="./assets/announcement.svg" class="filter-to-primary"/>  
+                        <!-- <img src="./assets/announcement.svg" class="filter-to-primary"/>  -->
+                        <img src="./assets/announcement.svg" class="svg-icon"/> 
+                        <!-- https://www.svgrepo.com/svg/470975/announcement-01  -->
                         學會<br/>公告
                     </h2>
                 </a>
@@ -188,9 +203,10 @@
             </section>
 
             <section>
-                <a href="#" class="svg-icon">
+                <a href="#">
                     <h2>
-                        <img src="./assets/event.svg" class="filter-to-primary"/>  
+                        <img src="./assets/event.svg" class="svg-icon"/>  
+                        <!-- https://www.svgrepo.com/svg/511572/calendar-1195 -->
                         活動<br/>訊息
                     </h2>
                 </a>
@@ -213,15 +229,23 @@
 
         <div class="main-nav">
             <a href="#">
+                <img src="./assets/information-info.svg" class="svg-icon"/> 
+                <!-- https://www.svgrepo.com/svg/399637/information-info -->
                 關於學會
             </a>
             <a href="#">
+                <img src="./assets/event.svg" class="svg-icon"/>
                 活動公告
+                <img src="./assets/announcement.svg" class="svg-icon"/> 
             </a>
             <a href="#">
+                <img src="./assets/book.svg" class="svg-icon"/>
+                <!-- https://www.svgrepo.com/svg/510849/book -->
                 學會出版
             </a>
             <a href="#">
+                <img src="./assets/internet.svg" class="svg-icon"/>
+                <!-- https://www.svgrepo.com/svg/502714/internet -->
                 網路資源
             </a>
         </div>
