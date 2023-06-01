@@ -81,7 +81,8 @@ a[target="_blank"]:after {
     --focus-color: #ff0000;
     --logo-color: #000000;
 
-    --svg-color-filter:invert(30%) sepia(10%) saturate(2783%) hue-rotate(314deg) brightness(101%) contrast(80%);
+    --svg-primary-color-filter:invert(38%) sepia(38%) saturate(680%) hue-rotate(314deg) brightness(78%) contrast(86%);
+    --svg-primary-bg-color-filter:invert(100%) sepia(0%) saturate(2%) hue-rotate(32deg) brightness(107%) contrast(101%);
 }
 
 .theme-dark {
@@ -92,7 +93,8 @@ a[target="_blank"]:after {
     --focus-color: #00ffaa;
     --logo-color: #ffffff;
 
-    --svg-color-filter:invert(87%) sepia(15%) saturate(188%) hue-rotate(126deg) brightness(103%) contrast(109%);
+    --svg-primary-color-filter:invert(86%) sepia(31%) saturate(103%) hue-rotate(118deg) brightness(107%) contrast(98%);
+    --svg-primary-bg-color-filter:invert(15%) sepia(0%) saturate(0%) hue-rotate(270deg) brightness(94%) contrast(97%);
 } 
 
 
@@ -249,6 +251,18 @@ nav > * {
 .nav-1-col, .nav-2-col {
     width: 100%;
 }
+
+.nav-1-col .icon-title-container {
+    display: flex;
+    justify-content: flex-start; /* Adjust as needed */
+  }
+  
+ .nav-1-col .svg-icon {
+    margin-right: 10px; /* Adjust the margin value to control the spacing */
+    height: 2rem;
+    filter: var(--svg-primary-color-filter);
+}
+  
 
 .nav-1-col > button {
     width: 100%;
@@ -420,14 +434,6 @@ main {
   to {opacity: 1}
 }
 
-.svg-icon img {
-    width: 3.5rem;
-}
-
-.filter-to-primary {
-    filter: var(--svg-color-filter)
-}
-
 section {
     margin-top: 1rem;
 
@@ -453,9 +459,18 @@ section a {
     /* transition: 0.1s; */
 }
 
+section a .svg-icon{
+    filter: var(--svg-primary-color-filter);
+    width: 3.5rem;
+}
+
 section a:hover {
     background-color: var(--primary-color);
     color: var(--primary-bg-color);
+}
+
+section a:hover .svg-icon{
+    filter: var(--svg-primary-bg-color-filter);
 }
 
 
@@ -540,9 +555,18 @@ section span {
     align-items: center;
 }
 
+.main-nav>a .svg-icon{
+    filter: var(--svg-primary-color-filter);
+    width: 3.5rem;
+}
+
 .main-nav > a:hover {
     background-color: var(--primary-color);
     color: var(--primary-bg-color);
+}
+
+.main-nav>a:hover .svg-icon{
+    filter: var(--svg-primary-bg-color-filter);
 }
 
 /* footer */
