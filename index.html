@@ -25,12 +25,17 @@
     <link rel="shortcut icon" href="/favicon/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
     <link rel="manifest" href="/favicon/site.webmanifest" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-<h1>Web of Dobahsi</h1>
+<h1><i>Web of Dobahsi</i></h1>
 <p>Hi there! I'm Yuan-Hsi Chien, a prospective PhD student and a frontend developer in Taiwan.</p>
-<p>Here are links to my <a href="/Yuanhsi_CV.pdf" target="_blank">CV</a>, <a href="https://github.com/dobahsi" target="_blank">GitHub</a>, and <a href="https://scholar.google.com/citations?user=8ynK5a4AAAAJ" target="_blank">Google Scholar</a>.</p>
+<p>Here are links to my <a href="/assets/Yuanhsi_CV.pdf" target="_blank">CV</a>, <a href="https://github.com/dobahsi" target="_blank">GitHub</a>, and <a href="https://scholar.google.com/citations?user=8ynK5a4AAAAJ" target="_blank">Google Scholar</a>.</p>
 <br>
 
 <dl>
@@ -50,7 +55,7 @@
     <dd>
       Detailed information can be found in the published journal paper:
       <br>
-      <a href="https://doi.org/10.1016/j.scs.2024.106004" target="_blank"><b>Chien, Y. H.</b>, Hsieh, I. Y. L. (2025). Enhancing Urban Energy Resilience: Vehicle-to-Grid (V2G) Strategies within Electric Scooter Battery Swapping Ecosystems. <i>Sustainable Cities and Society (IF = 10.5)</i>, 118, 106004.</a>
+      <a href="https://doi.org/10.1016/j.scs.2024.106004" target="_blank"><b>Chien, Y. H.</b>, Hsieh, I. Y. L. (2025). Enhancing Urban Energy Resilience: Vehicle-to-Grid (V2G) Strategies within Electric Scooter Battery Swapping Ecosystems. <i>Sustainable Cities and Society (IF = 10.5)</i>, 118, 106004.</a> <a href="/assets/bss-v2g.pdf" target="_blank" download="Enhancing Urban Energy Resilience-Vehicle-to-Grid (V2G) Strategies within Electric Scooter Battery Swapping Ecosystems">[↓ Download PDF]</a>
       <br><br>
       → Project Timeline: 2022 Sep. - 2024 Jun.
     </dd><br><br>
@@ -64,7 +69,7 @@
     <br><br>
     Details on the calculation of costs, greenhouse gas emissions, and emission targets can be found in the reference paper:
     <br>
-    <a href="https://doi.org/10.1016/j.esr.2023.101056" target="_blank"><b>Chien, Y. H.</b>, Hsieh, I. Y. L., & Chang, T. H. (2023). Beyond personal vehicles: How electrifying scooters will help achieve climate mitigation goals in Taiwan. <i>Energy Strategy Reviews (IF = 7.9)</i>, 45, 101056.</a>
+    <a href="https://doi.org/10.1016/j.esr.2023.101056" target="_blank"><b>Chien, Y. H.</b>, Hsieh, I. Y. L., & Chang, T. H. (2023). Beyond Personal Vehicles: How Electrifying Scooters will Help Achieve Climate Mitigation Goals in Taiwan. <i>Energy Strategy Reviews (IF = 7.9)</i>, 45, 101056.</a> <a href="/assets/scooter-tco-lca.pdf" download="Beyond Personal Vehicles-How Electrifying Scooters will Help Achieve Climate Mitigation Goals in Taiwan.pdf" target="_blank">[↓ Download PDF]</a>
     <br><br>
     → Project Timeline: 2021 Jun. - 2022 Sep.
     <br><br>
@@ -81,7 +86,7 @@
     <br><br>
     Detailed information can be found in the reference paper:
     <br>
-    <a href="https://km.twenergy.org.tw/publication/thesis_more?id=386" target="_blank"><b>Chien, Y. H.</b>, Hsieh, I. Y. L. (2024). Green Transformation of Bus Shelters: Implementation and Benefits of Solar Photovoltaic. <i>Journal of Taiwan Energy</i>, 11(4), 329-350.</a>
+    <a href="https://km.twenergy.org.tw/publication/thesis_more?id=386" target="_blank"><b>Chien, Y. H.</b>, Hsieh, I. Y. L. (2024). Green Transformation of Bus Shelters: Implementation and Benefits of Solar Photovoltaic. <i>Journal of Taiwan Energy</i>, 11(4), 329-350.</a> <a href="/assets/pv-bus-selter.pdf" target="_blank" download="Green Transformation of Bus Shelters-Implementation and Benefits of Solar Photovoltaic">[↓ Download PDF]</a>
     <br><br>
     → Project Timeline: 2024 Feb. - 2024 Jun.
   </dd><br><br>
@@ -112,11 +117,29 @@
 </body>
 
 <style>
-    * {font-style: serif;}
-    dd {
-      max-width: 120ch;
-      margin-block-start: 0.75rem;
-    }
+  * {
+    font-family: "Source Serif 4", serif;
+    font-optical-sizing: auto;
+  }
+  html {
+    scroll-behavior: smooth;
+    line-height: 1.4;
+  }
+  dd {
+    max-width: 100ch;
+    margin-block-start: 0.75rem;
+  }
+
+  /* Make code more visible */
+  pre,code { background: #eee }
+  pre { padding: 1em; display: inline-block }
+
+  /* Dark mode */
+  @media (prefers-color-scheme: dark) {
+    body { background-color: #131314; color: #e3e3e3; }
+    a { color: #a8c7fa; }
+    pre,code { background: #282a2c; }
+  }
 </style>
 
 </html>
